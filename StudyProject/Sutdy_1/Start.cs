@@ -25,9 +25,7 @@ namespace StudyProject.Sutdy_1
             Console.WriteLine("cls.X : {0}, cls.Y : {1}, str.X : {2}, str.Y : {3}", cls.X, cls.Y, str.X, str.Y);
 
             Console.WriteLine("문제 3번");
-            Student student = new Student(1, 1);
-            student.Name = "bincent";
-            student.Birthday = DateTime.Now.AddYears(-30);
+            Student student = new Student("bincent", DateTime.Now.AddYears(-30), 1, 1);
             Console.WriteLine("Name : {0}, Grade : {1}, ClassNumber : {2}, BirthDay : {3}, Age : {4}", student.Name, student.Grade, student.ClassNumber, student.Birthday, student.GetAge());
         }
 
